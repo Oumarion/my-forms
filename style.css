@@ -1,0 +1,167 @@
+:root {
+  --margin-bottom: 10px;
+  --label-padding: 20px;
+  --label-padding-right: 20px;
+  --label-width: 200px;
+  --widget-width: 250px;
+  --border-radius: 4px;
+  --main-padding: 30px;
+  --input-text-size: 14px;
+  --color-main: #5d6063;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-main);
+  background-color: rgb(182, 219, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-header {
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(186, 189, 190);
+  padding: var(--main-padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 25px 0;
+}
+
+/* ************ FORM STYLING ************ */
+
+.profile-form {
+  background-color: rgb(241, 238, 238);
+  border: 1px solid rgb(186, 189, 190);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+
+  padding: var(--main-padding);
+}
+
+/* ************ INPUT TEXT STYLING ************ */
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  border-radius: var(--border-radius);
+  color: var(--color-main);
+  font-size: var(--input-text-size);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(186, 189, 190);
+  padding: 7px;
+  width: var(--widget-width);
+}
+
+.form-row label {
+  width: var(--label-width);
+  margin-bottom: 20px;
+  padding-right: var(--label-padding);
+  text-align: right;
+  margin-top: 5px;
+}
+
+.form-row input[type="email"]:invalid {
+  /* color: rgb(212, 53, 56); */
+  border: 1.5px solid rgb(212, 53, 56);
+  box-shadow: none;
+}
+
+.profile-header,
+.profile-form {
+  width: 600px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+/* ************ RADIO BUTTON STYLING ************ */
+
+.radio-form-row {
+  border: none;
+  margin-bottom: var(--margin-bottom);
+}
+
+.radio-form-row legend {
+  width: var(--label-width);
+  padding-right: var(--label-padding-right);
+  text-align: right;
+  float: left;
+}
+
+.radio-label {
+  font-size: var(--input-text-size);
+  padding: 2px 20px 0 4px;
+}
+
+/* ************ DROPDOWN MENU STYLING ************ */
+
+.form-row select {
+  font-size: 14px;
+  padding: 5px;
+  width: var(--widget-width);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+/* ************ TEXTAREA STYLING ************ */
+.form-row textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid #d6d9dc;
+  border-radius: var(--border-radius);
+  min-height: 100px;
+  margin-bottom: var(--margin-bottom);
+  padding: 10px;
+  width: var(--widget-width);
+}
+
+.form-row .description {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: var(--margin-bottom);
+  margin-left: var(--label-width);
+  /* text-align: center; */
+}
+
+/* ************ CHECKBOX STYLING ************ */
+
+.form-row .checkbox-label {
+  margin-left: var(--label-width);
+  width: auto;
+}
+
+/* ************ BUTTON STYLING ************ */
+
+.form-row button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: var(--border-radius);
+  color: #fff;
+  background-color: rgb(231, 2, 2);
+  font-weight: bold;
+  font-size: 1em;
+
+  margin-left: var(--label-width);
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: rgb(255, 30, 30);
+}

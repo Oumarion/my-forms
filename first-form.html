@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="profile-header">
+      <h1>Personal Profile</h1>
+      <p><em>Update your profile so other get to know you better</em></p>
+    </header>
+    <!-- form -->
+    <form class="profile-form">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name..."
+        />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@hotmail.com"
+        />
+      </div>
+      <!-- adding our radio button -->
+      <fieldset class="radio-form-row">
+        <legend>Allow push notifications?</legend>
+        <!-- first section - no -->
+        <input type="radio" name="push-type" id="push-type-1" value="no" />
+        <label for="push-type-1" class="radio-label">No</label>
+        <!-- second section - yes -->
+        <input
+          type="radio"
+          name="push-type"
+          id="push-type-2"
+          value="yes"
+          checked
+        />
+        <label for="push-type-2" class="radio-label">Yes</label>
+      </fieldset>
+
+      <!-- adding  our dropdown menu -->
+      <div class="form-row">
+        <label for="color">Pick a profile color</label>
+        <select name="color" id="color">
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="pink">Pink</option>
+        </select>
+      </div>
+      <!-- adding a textarea to our form -->
+
+      <div class="form-row">
+        <label for="description">Your profile description</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="description">
+          Describe yourself here - your hobbies and interests
+        </div>
+      </div>
+      <!-- adding a checkbox to our form -->
+      <div class="form-row">
+        <label for="ishappy" class="checkbox-label">
+          <input type="checkbox" name="ishappy" id="ishappy" value="happy" />
+          <span>I am generally a happy person</span>
+        </label>
+      </div>
+      <!-- adding a checkbox to our form -->
+      <div class="form-row">
+        <button>Update</button>
+        <!-- <input type="button" value="Update" /> -->
+      </div>
+    </form>
+  </body>
+</html>
